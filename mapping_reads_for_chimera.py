@@ -57,14 +57,6 @@ def comparision(new_map_input_read,new_map_bwa_reads):
 
             if new_map_input_read[v[i]] != first_organism:
                 unmapped_reads.append(new_map_input_read[v[i]])
-                
-                #clean_reads['Non_chimeric'][k].append(new_map_input_read[v[i]])
-                #print "The clean nodes is %s"%(k)
-            #print k,counter, len(v)-1          
-            #else:
-                #print "The Chimeric contrig is %s"%(k)
-                #chimeric_reads['chimera'][k].append(new_map_input_read[v[i]])
-        
         
         if counter == len(v)-1:
             print "The Non chimeric reads is %s"%(k),counter,len(v)-1
@@ -73,37 +65,12 @@ def comparision(new_map_input_read,new_map_bwa_reads):
         if counter < len(v)-1:
             number_of_chimera_reads=len(v)
             print "The chimeric contig is %s"%(k),counter,len(v)-1,len(v)
-
             
-
-
-#        #return (clean_reads,chimeric_reads)
-
 user_string2 = '/home/kumara3/workspace/Read_simulator/input_data/Metasim_MC_92S_24M/hash_length21/first_output.sam'
 new_map_input_read=read_mapping(dict_reads)
 new_map_bwa_reads = bwa_output(user_string2)
-#for each in new_map_input_read:
-#    print each,":",new_map_input_read[each]
-#for i in new_map_bwa_reads:
-#    print i,":",new_map_bwa_reads[i]
-
-#returned_clean_reads, returned_chimeric_reads=comparision(new_map_input_read,new_map_bwa_reads)
-
 comparision(new_map_input_read,new_map_bwa_reads)
 
-#for k in returned_clean_reads:
-#    for l in returned_clean_reads[k]:
-#        print "The Non_chimeric reads is %s"%(l)
-#        print returned_clean_reads[k][l]
-
-#for i in returned_chimeric_reads:
-#    for j in returned_chimeric_reads[i]:
-#        print "The chimeric reads is are %s"%(j)
-#        print returned_chimeric_reads[i][j]
-        
-        
-    
-#
 
 
 
