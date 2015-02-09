@@ -2,15 +2,13 @@
 
 Introduction
 
-The script finds the number of chimeric contigs genearted in MetaVelvet assembly run.
+    The script finds the number of chimeric contigs genearted in MetaVelvet assembly run.
 
 Synopsis
 
- python [scriptname]
+    python [scriptname]
  
 Modules
-
-Name
 
   Contigs_per_binlength
   
