@@ -9,18 +9,26 @@ Synopsis
     python [scriptname]
  
 Modules
-
-  Contigs_per_binlength
+  Name
   
-      Description
-      
-         This module segregates the contigs in terms of bin length. Say for bin length of 1000 bp, number of total contigs generated is 20,000
-        
-Name
+    Contigs_per_binlength
   
-  mapping_reads_for_chimera
+        Description
       
-      Description
+             This module segregates the contigs in terms of bin length. Say for bin length of 1000 bp, number of total contigs generated is 20,000
+    
+  Name
+  
+    mapping_reads_for_chimera
+      
+        Description
          
-         This module find the number of chimeric contigs.
+            This module find the number of chimeric contigs
          
+  Name
+   
+    read_fasta_file
+    
+        Description
+         
+            This module reads the fasta file using a dictionary 
